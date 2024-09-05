@@ -1,6 +1,6 @@
 import dbConnect from "@/libs/dbs/init.mongo";
 import PostsModel from "@/models/Post";
-
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from "next/server";
 export async function GET(req: NextRequest) {
 	await dbConnect();

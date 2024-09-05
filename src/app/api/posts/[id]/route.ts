@@ -3,6 +3,7 @@ import dbConnect from "@/libs/dbs/init.mongo";
 import PostsModel from "@/models/Post";
 import { NextRequest, NextResponse } from "next/server";
 import { isValidObjectId } from "mongoose";
+export const dynamic = 'force-dynamic';
 export async function GET(req: NextRequest, { params }: { params: { id: string } }) {
 	await dbConnect();
 	if (!isValidObjectId(params.id)) {

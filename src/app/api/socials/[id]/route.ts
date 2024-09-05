@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import dbConnect from "@/libs/dbs/init.mongo";
-
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from "next/server";
 import SocialModel from "@/models/Social";
 import { isValidObjectId } from "mongoose";

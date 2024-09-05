@@ -1,6 +1,7 @@
 import dbConnect from "@/libs/dbs/init.mongo";
 import SocialModel from "@/models/Social";
 import { NextRequest, NextResponse } from "next/server";
+export const dynamic = 'force-dynamic';
 export async function GET(req: NextRequest) {
 	await dbConnect();
 	const socials = await SocialModel.find();

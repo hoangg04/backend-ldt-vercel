@@ -1,6 +1,7 @@
 import dbConnect from "@/libs/dbs/init.mongo";
 import ProductsModel from "@/models/Products";
 import { NextRequest, NextResponse } from "next/server";
+export const dynamic = 'force-dynamic';
 export async function GET(req: NextRequest) {
 	await dbConnect();
 	const products = await ProductsModel.find();
