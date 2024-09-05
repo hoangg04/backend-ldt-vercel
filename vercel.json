@@ -1,7 +1,4 @@
 {
-	"env": {
-		"DATABASE_URL": "mongodb+srv://ahoang01:anhanh@database-ldt.clqay.mongodb.net/?\"retryWrites\":=true&w=majority&appName=database-ldt",
-		"AUTH_ADMIN": "6xK9HX6AbAVIJDJypY4rAFZxtPj2"
-	},
+
 	"rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
